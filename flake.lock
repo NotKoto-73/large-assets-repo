@@ -1,0 +1,146 @@
+{
+  "nodes": {
+    "catppuccin-grub": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1752224239,
+        "narHash": "sha256-jgM22pvCQvb0bjQQXoiqGMgScR9AgCK3OfDF5Ud+/mk=",
+        "owner": "catppuccin",
+        "repo": "grub",
+        "rev": "0a37ab19f654e77129b409fed371891c01ffd0b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "grub",
+        "type": "github"
+      }
+    },
+    "dedsec-grub": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740979441,
+        "narHash": "sha256-Q84+WZLO6C8jiphuwBxeECy5OM2+c3ZJCZ+8v0546EM=",
+        "owner": "VandalByte",
+        "repo": "dedsec-grub2-theme",
+        "rev": "2c295638ae037c48f60b68210342874f574cce46",
+        "type": "github"
+      },
+      "original": {
+        "owner": "VandalByte",
+        "repo": "dedsec-grub2-theme",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixos-boot": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722927293,
+        "narHash": "sha256-8oCsiFyAuidAdhSz60Lu8+TwCPHxaeWixyv0xT0mLt4=",
+        "owner": "Melkor333",
+        "repo": "nixos-boot",
+        "rev": "afaed735149d0a06f234e54dd2d9db2e18dc64ae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Melkor333",
+        "repo": "nixos-boot",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1758690382,
+        "narHash": "sha256-NY3kSorgqE5LMm1LqNwGne3ZLMF2/ILgLpFr1fS4X3o=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e643668fd71b949c53f8626614b21ff71a07379d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "plymouth-themes": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1692705644,
+        "narHash": "sha256-e3lRgIBzDkKcWEp5yyRCzQJM6yyTjYC5XmNUZZroDuw=",
+        "owner": "adi1090x",
+        "repo": "plymouth-themes",
+        "rev": "5d8817458d764bff4ff9daae94cf1bbaabf16ede",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adi1090x",
+        "repo": "plymouth-themes",
+        "type": "github"
+      }
+    },
+    "refind-themes-community": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755020146,
+        "narHash": "sha256-Lj+BnX/16kEkjM/fRHd4XLJ9jlBvSMAwKF4FMeD75/I=",
+        "owner": "bobafetthotmail",
+        "repo": "refind-theme-regular",
+        "rev": "26a82c33c67bbcaf1498a3c2e4d314b7cbe6cf50",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bobafetthotmail",
+        "repo": "refind-theme-regular",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "catppuccin-grub": "catppuccin-grub",
+        "dedsec-grub": "dedsec-grub",
+        "flake-utils": "flake-utils",
+        "nixos-boot": "nixos-boot",
+        "nixpkgs": "nixpkgs",
+        "plymouth-themes": "plymouth-themes",
+        "refind-themes-community": "refind-themes-community"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
