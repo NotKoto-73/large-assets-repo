@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=rainbow-nix
+Description=Rainbow-nix Nix Logo Animation
+Comment=Animated Nix logo theme for boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/rainbow-nix
+ScriptFile=/usr/share/plymouth/themes/rainbow-nix/rainbow-nix.script

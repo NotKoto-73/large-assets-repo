@@ -1,0 +1,50 @@
+# Rainbow-nix Plymouth Theme
+
+image_quantity = 30;
+frame_rate = 15;
+frame_counter = 0;
+current_frame = 1;
+
+# Load frames
+for (i = 1; i <= image_quantity; i++)
+{
+    frame_image[i] = Image(sprintf("%03d.png", i));
+}
+
+# Create and position sprite
+logo_sprite = Sprite();
+logo_sprite.SetImage(frame_image[1]);
+
+logo_width = frame_image[1].GetWidth();
+logo_height = frame_image[1].GetHeight();
+logo_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - logo_width / 2));
+logo_sprite.SetY(Window.GetY() + (Window.GetHeight() / 2 - logo_height / 2));
+
+# Animation
+fun refresh_callback()
+{
+    frame_counter++;
+    if (frame_counter % (60 / frame_rate) == 0)
+    {
+        current_frame++;
+        if (current_frame > image_quantity)
+            current_frame = 1;
+        logo_sprite.SetImage(frame_image[current_frame]);
+    }
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);
+
+# LUKS messages
+fun message_callback(text)
+{
+    if (text)
+    {
+        message_image = Image.Text(text, 1, 1, 1);
+        message_sprite = Sprite(message_image);
+        message_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - message_image.GetWidth() / 2));
+        message_sprite.SetY(logo_sprite.GetY() + logo_height + 30);
+    }
+}
+
+Plymouth.SetMessageFunction(message_callback);

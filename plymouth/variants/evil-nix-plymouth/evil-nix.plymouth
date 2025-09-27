@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=evil-nix
+Description=Evil-nix Nix Logo Animation
+Comment=Animated Nix logo theme for boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/evil-nix
+ScriptFile=/usr/share/plymouth/themes/evil-nix/evil-nix.script

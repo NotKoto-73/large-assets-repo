@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=pride-nix
+Description=Pride-nix Nix Logo Animation
+Comment=Animated Nix logo theme for boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/pride-nix
+ScriptFile=/usr/share/plymouth/themes/pride-nix/pride-nix.script
